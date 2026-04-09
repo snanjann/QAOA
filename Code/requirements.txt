@@ -1,0 +1,7 @@
+numpy==1.26.4
+scipy==1.14.1
+networkx==3.5
+matplotlib==3.9.2
+pytest==8.3.3
+qiskit==1.0.2
+qiskit-aer==0.14.2

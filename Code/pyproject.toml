@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qaoa"
+version = "0.1.0"
+description = "Qiskit-based QAOA tools for Max-Cut, RQAOA, and ERQAOA"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "networkx",
+    "qiskit",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+notebooks = [
+    "matplotlib",
+    "qiskit-aer",
+]
+fake-backend = [
+    "qiskit-ibm-runtime",
+]
+
+[tool.setuptools]
+packages = ["qaoa"]
